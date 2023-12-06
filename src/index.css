@@ -165,6 +165,17 @@ body:has(.card[data-color="green"]:hover) {
   transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
 }
 
+.skill-name-container {
+  position: absolute;
+}
+
+.skill-container:hover > .skill-name-container > .skill-name-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* Neo Brutalism */
 .neo-brutalism-blue {
   background: #2b77e7;

@@ -18,15 +18,20 @@ const About = () => {
 
             <div className='mt-16 flex flex-wrap gap-12'>
                 {skills.map((skill) => (
-                    <div className='block-container w-20 h-20'>
-                        <div className='btn-back rounded-xl'/>
-                        <di className='btn-front rounded-xl flex justify-center items-center'>
-                            <img
-                                src={skill.imageUrl}
-                                alt={skill.name}
-                                className='w-1/2 h-1/2 object-contain'
-                                />
-                        </di>
+                    <div className='skill-container'>
+                        <div className='block-container w-20 h-20'>
+                            <div className='btn-back rounded-xl'/>
+                            <div className='btn-front rounded-xl flex justify-center items-center'>
+                                <img
+                                    src={skill.imageUrl}
+                                    alt={skill.name}
+                                    className='w-1/2 h-1/2 object-contain'
+                                    />
+                            </div>
+                        </div>
+                        <div className='skill-name-container w-20 h-10'>
+                            <div className='skill-name-text hidden text-slate-500 text-semibold'>{skill.name}</div>
+                        </div>
                     </div>
                 ))}
             </div>
