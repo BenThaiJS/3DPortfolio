@@ -30,7 +30,7 @@ const About = () => {
                             </div>
                         </div>
                         <div className='skill-name-container w-20 h-10'>
-                            <div className='skill-name-text hidden text-slate-500 text-semibold'>{skill.name}</div>
+                            <div className='skill-name-text hidden text-slate-500 text-semibold mt-1'>{skill.name}</div>
                         </div>
                     </div>
                 ))}
